@@ -3,6 +3,15 @@
 <head>
 
   <!---validation--->
+
+<!--<script type="text/javascript">
+  function om(){
+ var k = document.getElementById("ompals").value;
+export {k as email}
+}
+</script>
+-->
+<link rel="stylesheet" type="text/css" href="D:\Coding\julie\my_script">
    <title>Julie's multivendor website</title>
   <meta charset="utf-8">
    <link rel="shortcut icon" href="images/favicon.ico" \>
@@ -42,15 +51,16 @@
 <div class="jumbotron text-center">
   <h1>Julie</h1> 
   <p>Online marketplace</p> 
-  <form class="form-inline">
+  <form class="form-inline" method="GET">
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <input type="email"   id = "ompals" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="submit" class="btn btn-danger">Subscribe</button>
+        <button type="submit" class="btn btn-danger" onclick="om()">Subscribe</button>
       </div>
     </div>
   </form>
 </div>
+
 
 <!-- Container (About Section) -->
 <div class="container-fluid">
